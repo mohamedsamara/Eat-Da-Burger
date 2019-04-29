@@ -5,7 +5,9 @@ const burger = require('../models/burger');
 
 router.get('/', (req, res) => {
   burger.selectAll(function(data) {
-    console.log(data);
+    res.render('home', {
+      burgers: data
+    });
   });
 });
 

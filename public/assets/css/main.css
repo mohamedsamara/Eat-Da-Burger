@@ -1,0 +1,116 @@
+/* start application styles */
+
+/* start layout styles */
+
+/* scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a6ed2f0;
+  border: 2px solid #0a6ed2f0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+/* scrollbar styles */
+
+body {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  padding: 100px 0px;
+}
+
+.dark-overflow {
+  background-color: #00000066;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* end layout styles */
+
+/* start bootstrap overrides */
+.navbar {
+  background-color: #f5f5f5 !important;
+}
+/* end bootstrap overrides */
+
+/* start burger styles */
+.burger {
+  text-align: center;
+}
+/* end burger styles */
+
+/* start left side popup */
+.waiting-devoured {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin-left: -350px;
+  left: 250px;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.waiting-devoured.left-popup {
+  width: auto;
+  margin-left: 0px;
+  left: 0px;
+}
+/* end left side popup */
+
+/* start right side popup */
+.devoured {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  margin-right: -350px;
+  right: 250px;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.devoured.right-popup {
+  width: auto;
+  margin-right: 0px;
+  right: 0px;
+}
+/* end right side popup */
+
+/* end application styles */
