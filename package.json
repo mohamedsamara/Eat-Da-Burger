@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
   }
 }
