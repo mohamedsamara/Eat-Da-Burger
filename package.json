@@ -1,0 +1,26 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Eat Da Burger Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsamara/Eat-Da-Burger.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "express-handlebars"
+  ],
+  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsamara/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger"
+}
