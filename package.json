@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mohamedsamara/Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger"
+  "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
