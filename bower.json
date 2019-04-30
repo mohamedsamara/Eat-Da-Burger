@@ -6,5 +6,9 @@
   "license": "ISC",
   "keywords": ["node", "express", "mysql", "express-handlebars"],
   "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger",
-  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"]
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "bootstrap": "^4.3.1"
+  }
 }

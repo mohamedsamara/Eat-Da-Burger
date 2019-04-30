@@ -11,22 +11,25 @@ router.get('/', (req, res) => {
   });
 });
 
-router.post('/add', (req, res) => {
-  burger.insertOne(['burger_name', 'devoured'], ['test', true], function(
-    result
-  ) {
-    console.log(result);
-    res.redirect('/');
-  });
+router.post('/burgers/add', (req, res) => {
+  burger.insertOne(
+    ['burger_name', 'devoured'],
+    [req.body.burger_name, false],
+    function(result) {
+      res.redirect('/');
+    }
+  );
 });
 
-router.put('/edit/:id', (req, res) => {
+router.put('/burgers/:id', (req, res) => {
   let condition = 'id = ' + req.params.id;
 
-  console.log('condition', condition);
-
   burger.updateOne({ devoured: true }, condition, function(result) {
-    console.log('result', result);
+    if (result.changedRows === 0) {
+      res.status(404).send('Something broke!');
+    } else {
+      res.status(200).send('Ok');
+    }
   });
 });
 

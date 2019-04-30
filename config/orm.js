@@ -32,13 +32,13 @@ const orm = {
 
   insertOne: function(table, columns, values, next) {
     let sql =
-      "INSERT INTO '" +
+      'INSERT INTO ' +
       table +
-      "' ('" +
+      ' (' +
       columns.toString() +
-      "') VALUES ('" +
+      ') VALUES (' +
       sqlWhereSyntax(values.length) +
-      "')";
+      ')';
 
     connection.query(sql, values, function(err, result) {
       if (err) {
@@ -50,13 +50,7 @@ const orm = {
 
   updateOne: function(table, columns, condition, next) {
     let sql =
-      "Update '" +
-      table +
-      "' SET'" +
-      sqlSet(columns) +
-      "'WHERE'" +
-      condition +
-      "')";
+      'Update ' + table + ' SET ' + sqlSet(columns) + ' WHERE ' + condition;
 
     connection.query(sql, function(err, result) {
       if (err) {

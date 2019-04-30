@@ -1,14 +1,73 @@
 <div class="burger">
     <img src="/assets/images/burger.jpg">
+
+    <form method='POST' action='/burgers/add' class="burger-form" name="add-burger" onsubmit="return validateForm()">
+        <div class="form-group row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-12">
+                <input type="text" class="form-control" id="burger-name" name="burger_name"
+                    placeholder="Your Favorite Burger">
+            </div>
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="burger-actions">
+                    <i class="fas fa-arrow-left"></i>
+                    <button type="button" class="btn btn-dark" id="devour-burgers">Devour Burgers</button>
+                    <button type="submit" class="btn btn-primary">Add Burger</button>
+                    <button type="button" class="btn btn-dark" id="devoured-burgers">Devoured Burgers</button>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </form>
 </div>
 
 {{!-- left popup --}}
 <div class="waiting-devoured">
 
+    {{#if burgers}}
+    <ul class="list-group">
+        {{#each burgers}}
+        {{#unless this.devoured}}
+        <li class="list-group-item">
+            <p>{{this.burger_name}}</p>
+            <button type="submit" class='btn-devour' id="devour-btn" data-id="{{this.id}}">Devour it!</button>
+        </li>
+        {{/unless}}
+
+        {{/each}}
+    </ul>
+
+    {{else}}
+    <p class="no-burgers">
+        No Burgers Yet!
+    </p>
+    {{/if}}
+
 </div>
 
 {{!-- right popup --}}
 <div class="devoured">
+
+    <ul class="list-group">
+        {{#if burgers}}
+        {{#each burgers}}
+
+        {{#if this.devoured}}
+        <li class="list-group-item">
+            <p>{{this.burger_name}}</p>
+            <i class="fas fa-check"></i>
+        </li>
+
+        {{/if}}
+
+        {{/each}}
+    </ul>
+
+    {{else}}
+    <p class="no-burgers">
+        No Devoured Burgers Yet!
+    </p>
+    {{/if}}
 
 </div>
 
