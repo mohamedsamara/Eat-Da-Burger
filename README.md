@@ -10,6 +10,11 @@ A restaurant app that lets users input the names of burgers they'd like to eat a
   * Express Handlebars are implemented to generate the HTML 
   * MySQL to query data from the database 
 
+
+## Demo
+	
+Eat Da Burger is deployed on Heroku. Please check it out [here](https://arcane-shore-95399.herokuapp.com/).
+
   
 ## Install
 
