@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohamedsamara/Eat-Da-Burger.git"
+    "url": "git+https://github.com/mohamedsamara/eat-da-burger.git"
   },
   "keywords": [
     "node",
@@ -20,9 +20,9 @@
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mohamedsamara/Eat-Da-Burger/issues"
+    "url": "https://github.com/mohamedsamara/eat-da-burger/issues"
   },
-  "homepage": "https://github.com/mohamedsamara/Eat-Da-Burger",
+  "homepage": "https://github.com/mohamedsamara/eat-da-burger#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^7.0.0",
