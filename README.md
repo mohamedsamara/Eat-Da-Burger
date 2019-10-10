@@ -1,4 +1,4 @@
-# Eat-Da-Burger
+# Eat Da Burger
 
 ## Description
 
@@ -21,7 +21,7 @@ Eat Da Burger is deployed on Heroku. Please check it out [here](https://arcane-s
 Some basic Git commands are:
 
 ```
-$ git clone https://github.com/mohamedsamara/Eat-Da-Burger.git
+$ git clone https://github.com/mohamedsamara/eat-da-burger.git
 $ cd project
 $ npm install
 $ bower install
