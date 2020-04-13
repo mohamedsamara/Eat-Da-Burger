@@ -1,15 +1,28 @@
 {
   "name": "eat-da-burger",
-  "description": "Eat Da Burger Application",
+  "description": "Eat Da Burger",
   "main": "server.js",
-  "authors": ["Mohamed Samara (https://github.com/mohamedsamara)"],
+  "authors": [
+    "Mohamed Samara (https://github.com/mohamedsamara)"
+  ],
   "license": "ISC",
-  "keywords": ["node", "express", "mysql", "express-handlebars"],
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "express-handlebars"
+  ],
   "homepage": "https://github.com/mohamedsamara/eat-da-burger#readme",
-  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "^3.4.0",
+    "jquery": "^1.12.4",
     "bootstrap": "^4.3.1",
-    "components-font-awesome": "^5.4.2"
+    "font-awesome-5": "^5.13.0"
   }
 }

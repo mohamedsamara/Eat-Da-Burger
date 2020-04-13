@@ -13,7 +13,7 @@ A restaurant app that lets users input the names of burgers they'd like to eat a
 
 ## Demo
 	
-Eat Da Burger is deployed on Heroku. Please check it out [here](https://arcane-shore-95399.herokuapp.com/).
+Eat Da Burger is deployed on Heroku. Please check it out [here](https://guarded-cove-92719.herokuapp.com/).
 
   
 ## Install
@@ -24,7 +24,6 @@ Some basic Git commands are:
 $ git clone https://github.com/mohamedsamara/eat-da-burger.git
 $ cd project
 $ npm install
-$ bower install
 
 ```
 
