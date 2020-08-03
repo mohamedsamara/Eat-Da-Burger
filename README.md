@@ -24,7 +24,6 @@ Some basic Git commands are:
 $ git clone https://github.com/mohamedsamara/eat-da-burger.git
 $ cd project
 $ npm install
-
 ```
 
 ## Start
